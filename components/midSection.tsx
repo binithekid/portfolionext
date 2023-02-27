@@ -98,8 +98,16 @@ const MidSection = ({ darkMode }: any) => {
             </div>
           </div>
           <div className='flex flex-row gap-4'>
-            <FiGithub size={"1.3em"} />
-            <HiOutlineMail size={"1.4em"} />
+            <a
+              target='_blank'
+              href='https://github.com/binithekid?tab=repositories'
+              className='cursor-pointer'
+              rel='noreferrer'>
+              <FiGithub size={"1.3em"} />
+            </a>
+            <a href='mailto:bini.tek1@gmail.com' className='cursor-pointer'>
+              <HiOutlineMail size={"1.4em"} />
+            </a>
           </div>
         </motion.nav>{" "}
         <div className='content' ref={sectionRef}>
