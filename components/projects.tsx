@@ -37,7 +37,7 @@ const Projects = ({ darkMode }: any) => {
       transition: {
         bounce: 0.4,
         duration: 1,
-        delayChildren: 0.4,
+        delayChildren: 1.3,
         staggerChildren: 0.5,
         type: "spring",
       },
@@ -49,10 +49,8 @@ const Projects = ({ darkMode }: any) => {
     show: {
       opacity: 1,
       transition: {
-        bounce: 0.4,
         duration: 1.5,
-        delay: 0.8,
-        type: "spring",
+        delay: 1,
       },
     },
   };
@@ -118,13 +116,6 @@ const Projects = ({ darkMode }: any) => {
                 darkMode ? "projectCardDark" : ""
               } shadow-md rounded-md flex flex-col justify-between w-full px-6 pt-6 pb-2 md:w-1/3 bg-white`}>
               <>
-                {/* <Image
-                  height={500}
-                  width={500}
-                  src={project.image}
-                  alt={project.name}
-                  className='object-cover h-48 w-full border'
-                /> */}
                 <p className='font-CalSans mt-2 text-2xl'>{project.name}</p>
                 <p className='text-sm mt-1 mb-6'>{project.excerpt}</p>
               </>

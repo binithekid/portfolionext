@@ -21,7 +21,6 @@ const Modal = forwardRef(
     }: any,
     ref: Ref<HTMLDivElement> | undefined
   ) => {
-    console.log(link);
     return (
       <AnimatePresence>
         {showModal === i && (

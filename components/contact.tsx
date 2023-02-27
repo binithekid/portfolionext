@@ -19,7 +19,6 @@ const Contact = ({ darkMode }: any) => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
           setConfirmation({
             message: "Success",
           });
