@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         CalSans: ['"CalSans"', "sans-serif"],
+        Ubuntu: ["Ubuntu", "sans-serif"],
       },
     },
   },

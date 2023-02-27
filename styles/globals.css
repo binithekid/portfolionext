@@ -9,6 +9,14 @@
   font-style: normal;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  color: #282828;
+}
+
 .bg-animate {
   background-image: linear-gradient(
     to right,
@@ -17,26 +25,40 @@
     rgb(33, 49, 104),
     rgb(25, 61, 140),
     #1681c4,
-    #12b891,
-    #0fd637,
-    #2ce90b,
-    #e9ed0e,
-    #f0b80e,
-    #ec3907,
-    #ff0000,
-    #ed0e0e,
-    #9f123c,
-    #3f0a31,
+    #1681c4,
+    rgb(25, 61, 140),
     #280418,
+    rgb(33, 49, 104),
+    rgb(31, 37, 53),
     black
   );
   background-size: 500% 100%;
   animation: bgChange 20s ease-in-out infinite;
-  font-size: 8rem;
-  line-height: 1;
   color: transparent;
   background-clip: text;
-  margin-left: 13px;
+  margin-left: 7px;
+}
+
+.bg-animate-dark {
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(175, 187, 219),
+    rgb(117, 137, 203),
+    rgb(86, 117, 183),
+    #1681c4,
+    #1681c4,
+    rgb(109, 131, 180),
+    #c580a6,
+    rgb(164, 122, 193),
+    rgb(127, 146, 199),
+    white
+  );
+  background-size: 500% 100%;
+  animation: bgChange 20s ease-in-out infinite;
+  color: transparent;
+  background-clip: text;
+  margin-left: 7px;
 }
 
 @keyframes bgChange {
@@ -57,5 +79,255 @@
   }
   100% {
     background-position: -500% 0%, -400% 0%, -300% 0%, -200% 0%, -100% 0%;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.regularText {
+  font-size: 8rem;
+  line-height: 1;
+  font-family: "CalSans";
+}
+
+@keyframes bgChange {
+  0% {
+    background-position: 0% 0%, 100% 0%, 200% 0%, 300% 0%, 400% 0%;
+  }
+  20% {
+    background-position: -100% 0%, 0% 0%, 100% 0%, 200% 0%, 300% 0%;
+  }
+  40% {
+    background-position: -200% 0%, -100% 0%, 0% 0%, 100% 0%, 200% 0%;
+  }
+  60% {
+    background-position: -300% 0%, -200% 0%, -100% 0%, 0% 0%, 100% 0%;
+  }
+  80% {
+    background-position: -400% 0%, -300% 0%, -200% 0%, -100% 0%, 0% 0%;
+  }
+  100% {
+    background-position: -500% 0%, -400% 0%, -300% 0%, -200% 0%, -100% 0%;
+  }
+}
+
+.animatedText {
+  font-size: 8rem;
+  line-height: 1;
+  font-family: "CalSans";
+  margin-left: 1rem;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, black, blue, green, red, black);
+  animation: bgChange 20s ease infinite;
+  background-size: 500% 100%;
+}
+
+.bg-animate-small {
+  background-image: linear-gradient(
+    to right,
+    black,
+    rgb(31, 37, 53),
+    rgb(33, 49, 104),
+    rgb(25, 61, 140),
+    #1681c4,
+    #1681c4,
+    rgb(25, 61, 140),
+    #280418,
+    rgb(33, 49, 104),
+    rgb(31, 37, 53),
+    black
+  );
+  background-size: 500% 100%;
+  animation: bgChange 20s ease-in-out infinite;
+  color: transparent;
+  background-clip: text;
+  margin-left: 5px;
+}
+
+.bg-animate-dark-small {
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgb(175, 187, 219),
+    rgb(117, 137, 203),
+    rgb(86, 117, 183),
+    #1681c4,
+    #1681c4,
+    rgb(109, 131, 180),
+    #c580a6,
+    rgb(164, 122, 193),
+    rgb(127, 146, 199),
+    white
+  );
+  background-size: 500% 100%;
+  animation: bgChange 20s ease-in-out infinite;
+  color: transparent;
+  background-clip: text;
+  margin-left: 5px;
+}
+
+.switch {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.switchLight {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+}
+
+.switchDark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.handle {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+}
+
+.handleLight {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.handleDark {
+  background-color: black;
+  color: white;
+  box-shadow: rgba(224, 221, 221, 0.16) 0px 1px 4px;
+}
+
+.LightLanding {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  transition: background-color 0.5s ease;
+}
+
+.DarkLanding {
+  background-color: #1f2024;
+  transition: background-color 0.5s ease;
+  color: white;
+}
+
+.exploreButton {
+  opacity: 0;
+  animation: fade-in 1.5s ease-out forwards;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  animation-delay: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.modal-content {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+}
+
+.fixed + .content {
+  padding-top: 70px;
+}
+
+.submitButton {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.lightMidSection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  transition: background-color 0.5s ease;
+}
+
+.darkMidSection {
+  background-color: #1f2024;
+  transition: background-color 0.5s ease;
+  color: white;
+}
+
+.darkNav {
+  background-color: black;
+}
+
+.dark-modal-content {
+  position: absolute;
+  background-color: #34363a;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  color: white;
+}
+
+.projectCardDark {
+  background-color: #34363a;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  .handle {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
   }
 }
