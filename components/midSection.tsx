@@ -89,12 +89,12 @@ const MidSection = ({ darkMode }: any) => {
           viewport={{ once: true }}
           style={{ originY: 0.55 }}>
           <div className='font-CalSans flex flex-row'>
-            <h1 className='text-2xl md:text-3xl '>The Masonry</h1>
+            <h1 className='text-2xl md:text-3xl '>Binyams</h1>
             <div
               className={` text-2xl md:text-3xl ${
                 darkMode ? "bg-animate-dark-small" : "bg-animate-small"
               }`}>
-              Group
+              portfolio
             </div>
           </div>
           <div className='flex flex-row gap-4'>

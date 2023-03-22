@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='w-full flex justify-center items-center p-6 border-t border-gray-300 flex-col mt-12'>
       {/* <hr className='h-px my-8 bg-gray-900 border-0 dark:bg-gray-700'></hr> */}
-      <h1 className='font-CalSans'>Where to find us:</h1>
+      <h1 className='font-CalSans'>Where to find me:</h1>
       <div className='flex gap-2 mt-2'>
         <a
           className='cursor-pointer'
