@@ -81,7 +81,9 @@ const Landing = ({ darkMode, setDarkMode }: any) => {
       <motion.div variants={container} initial='hidden' animate='show'>
         <motion.p variants={item}>Binyam Teklebrhan</motion.p>
         <motion.div variants={item} className='flex flex-row'>
-          <h1 className='font-CalSans text-4xl sm:text-5xl md:text-6xl'>Web</h1>
+          <h1 className='font-CalSans text-4xl sm:text-5xl md:text-6xl'>
+            Software
+          </h1>
           <div
             className={`font-CalSans text-4xl sm:text-5xl md:text-6xl ${
               darkMode ? `bg-animate-dark` : `bg-animate`
