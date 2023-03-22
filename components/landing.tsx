@@ -79,32 +79,30 @@ const Landing = ({ darkMode, setDarkMode }: any) => {
         </motion.div>
       </div>
       <motion.div variants={container} initial='hidden' animate='show'>
-        <motion.p variants={item}>Welcome to</motion.p>
+        <motion.p variants={item}>Binyam Teklebrhan</motion.p>
         <motion.div variants={item} className='flex flex-row'>
-          <h1 className='font-CalSans text-4xl sm:text-5xl md:text-6xl'>
-            The Masonry
-          </h1>
+          <h1 className='font-CalSans text-4xl sm:text-5xl md:text-6xl'>Web</h1>
           <div
             className={`font-CalSans text-4xl sm:text-5xl md:text-6xl ${
               darkMode ? `bg-animate-dark` : `bg-animate`
             } `}>
-            Group
+            developer
           </div>
         </motion.div>
         <motion.p
           variants={item}
           className='w-full md:w-1/2 mt-2 text-sm md:text-base'>
-          As skilled web developers with a keen eye for design, we have amassed
+          As a skilled web developer with a keen eye for design, I have amassed
           over five years of practical experience in efficiently crafting
           websites and applications using a variety of tools, including
-          JavaScript/React and TypeScript. Our commitment to creating
+          JavaScript/React and TypeScript. My commitment to creating
           state-of-the-art, user-friendly interfaces has been a driving force
-          for our success. We pride ourselves on our ability to stay ahead of
+          throughout my career. I pride myself on my ability to stay ahead of
           the curve by actively seeking out the latest advancements and trends
           in the field. With this dedication to excellence and a passion for
-          delivering consistently exceptional work, we are confident that we
-          would make a valuable addition to any team in need of skilled web
-          developers.
+          delivering consistently exceptional work, I am confident that I would
+          make a valuable addition to any team in need of a skilled web
+          developer.
         </motion.p>
       </motion.div>
       <motion.button
