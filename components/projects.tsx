@@ -65,7 +65,7 @@ const Projects = ({ darkMode }: any) => {
       <div className='flex flex-col'>
         <h1 className='font-CalSans text-2xl'>Projects 🚀</h1>
         <p className='w-full md:w-1/2 '>
-          Some projects that I have been working on recently
+          Some projects that we have been working on recently
         </p>
       </div>
       <motion.div

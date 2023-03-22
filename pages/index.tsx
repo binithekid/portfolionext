@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Binyam&apos;s Portfolio</title>
+        <title>Masonry Group</title>
         <meta
           name='description'
           content='My portfolio website built using Next JS and Typescript'

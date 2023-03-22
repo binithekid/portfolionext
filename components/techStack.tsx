@@ -29,7 +29,7 @@ const TechStack = () => {
     <section className='p-8 md:p-14 mt-16 mb-20'>
       <h1 className='font-CalSans text-2xl mb-1'>Tech Stack 💡</h1>
       <p className='w-full md:w-1/2 '>
-        Some technologies and frameworks I use during my working process
+        Some technologies and frameworks we use during our working process
       </p>
       <motion.div
         variants={container}

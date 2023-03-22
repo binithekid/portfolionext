@@ -73,11 +73,11 @@ const Contact = ({ darkMode }: any) => {
   return (
     <div className='flex w-full flex-col px-8 pt-20 justify-center items-center'>
       <h1 className='font-CalSans text-2xl md:text-4xl mb-4'>
-        Send me a message 👋
+        Send us a message 👋
       </h1>
       <p className='w-full md:w-1/2 mb-3'>
         If you have any enquires or would like to leave any feedback feel free
-        to drop me a message.
+        to drop us a message.
       </p>
       <motion.form
         variants={container}
