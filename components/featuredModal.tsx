@@ -79,7 +79,7 @@ const FeaturedModal = ({ showFeatured, setShowFeatured, darkMode }: any) => {
                   </a>
                   <a
                     target='_blank'
-                    href='https://nutriplanai.vercel.app/'
+                    href='https://nutraiplan.com/'
                     className='border gap-2 py-1 px-3 flex flex-row justify-center items-center uppercase text-sm rounded shadow bg-blue-500 text-white transition-all hover:opacity-70'
                     rel='noreferrer'>
                     <FaGlobe size={"1em"} /> Website
