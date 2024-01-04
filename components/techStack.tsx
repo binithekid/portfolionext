@@ -26,49 +26,54 @@ const TechStack = () => {
   };
 
   return (
-    <section className='p-8 md:p-14 mt-16 mb-20'>
-      <h1 className='font-CalSans text-2xl mb-1'>Tech Stack 💡</h1>
-      <p className='w-full md:w-1/2 '>
+    <section className="p-8 md:p-14 mt-16 mb-20 flex items-center justify-center flex-col">
+      <h1 className="font-CalSans text-2xl mb-1">Tech Stack 💡</h1>
+      <p className="w-full text-center">
         Some technologies and frameworks I use during my working process
       </p>
       <motion.div
         variants={container}
-        initial='hidden'
-        whileInView='show'
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true }}
-        className='w-full flex flex-row mt-10 flex-wrap'>
+        className="w-full items-center justify-center flex flex-row mt-10 flex-wrap"
+      >
         <motion.div
           variants={item}
-          className='w-1/2 md:w-1/4 flex flex-col mt-4 md:mt-0'>
-          <SiJavascript size={"3rem"} className='mb-1' />
-          <p className='font-CalSans'>Languages</p>
+          className="w-1/2 md:w-1/4 flex flex-col items-center justify-center mt-4 md:mt-0"
+        >
+          <SiJavascript size={"3rem"} className="mb-1" />
+          <p className="font-CalSans">Languages</p>
           <p>JavaScript</p>
           <p>TypeScript</p>
           <p>GraphQL</p>
         </motion.div>
         <motion.div
           variants={item}
-          className='w-1/2 md:w-1/4 flex flex-col mt-4 md:mt-0'>
-          <FaReact size={"3rem"} className='mb-1' />
-          <p className='font-CalSans'>Frameworks</p>
+          className="w-1/2 md:w-1/4 flex flex-col  items-center justify-center mt-4 md:mt-0"
+        >
+          <FaReact size={"3rem"} className="mb-1" />
+          <p className="font-CalSans">Frameworks</p>
           <p>React</p>
           <p>NodeJS</p>
           <p>NextJS</p>
         </motion.div>
         <motion.div
           variants={item}
-          className='w-1/2 md:w-1/4 flex flex-col mt-6 md:mt-0'>
-          <MdOutlineDesignServices size={"3rem"} className='mb-1' />
-          <p className='font-CalSans'>Design</p>
+          className="w-1/2 md:w-1/4 flex flex-col items-center justify-center mt-6 md:mt-0"
+        >
+          <MdOutlineDesignServices size={"3rem"} className="mb-1" />
+          <p className="font-CalSans">Design</p>
           <p>CSS/SCSS</p>
           <p>Tailwind</p>
           <p>Styled Components</p>
         </motion.div>
         <motion.div
           variants={item}
-          className='w-1/2 md:w-1/4 flex flex-col mt-6 md:mt-0'>
-          <SiAdobephotoshop size={"3rem"} className='mb-1' />
-          <p className='font-CalSans'>Other</p>
+          className="w-1/2 md:w-1/4 flex flex-col  items-center justify-center mt-6 md:mt-0"
+        >
+          <SiAdobephotoshop size={"3rem"} className="mb-1" />
+          <p className="font-CalSans">Other</p>
           <p>Photoshop</p>
           <p>Figma</p>
           <p>Adobe XD</p>

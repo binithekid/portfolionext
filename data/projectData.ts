@@ -1,29 +1,30 @@
 import blogapp from "../public/images/blogapp.png";
-import onecloudlogo from "../public/images/onecloudlogo.png";
+import londonjobs from "../public/images/londonjobs.png";
 import pokemon from "../public/images/pokemon.png";
+import nutraiplan from "../public/images/nutriplan.png";
 
 export const portfolioProjects = [
   {
-    name: "One Cloud Media",
-    gitHub: "https://github.com/binithekid/onecloudmedia",
-    link: "https://onecloudmedia.io/",
+    name: "NutraiPlan",
+    // gitHub: "https://github.com/binithekid/onecloudmedia",
+    link: "https://nutraiplan.com/",
     description:
       "I undertook the design and development of this website utilizing React Js. The website boasts seamless mobile responsiveness, ensuring a smooth user experience across different devices. To add a touch of sophistication to the website, I incorporated customized animations leveraging the GSAP animation library. By creating this website, I was able to demonstrate my ability to design and code high-quality web applications that deliver both form and function, and offer an immersive user experience",
-    image: onecloudlogo.src,
+    image: nutraiplan.src,
     excerpt:
       "I undertook the design and development of this website utilizing React Js, showcasing my proficiency in the latest web technologies. ",
     techStack: ["React", "CSS", "GSAP", "Material UI"],
   },
   {
-    name: "Blog Website",
-    gitHub: "https://github.com/binithekid/myblog",
-    link: "https://bentech.vercel.app/",
+    name: "London Retail Jobs",
+    // gitHub: "https://github.com/binithekid/myblog",
+    link: "https://www.retailjobslondon.co.uk/",
     description:
-      "Leveraging the powerful features of Next.js, I was able to create a blazing-fast website with dynamic content rendering. The integration of TypeScript ensured robust type-checking and increased code maintainability, while the use of GraphQL enabled efficient data querying and management. By utilizing these advanced technologies, I was able to develop a fully responsive and intuitive website that offers a seamless user experience. The website boasts an elegant and modern design, with comprehensive blogging features such as article publishing, commenting, and user authentication. This project showcases my ability to deliver full-stack solutions that are efficient, secure, and visually appealing",
-    image: blogapp.src,
+      "Leveraging the powerful features of Next.js, I was able to create a blazing-fast job board with server side content rendering. The integration of TypeScript ensured robust type-checking and increased code maintainability, while the use of Firebase enabled efficient data querying and management. By utilizing these advanced technologies, I was able to develop a fully responsive and intuitive website that offers a seamless user experience. This project showcases my ability to deliver full-stack solutions that are efficient, secure, and visually appealing",
+    image: londonjobs.src,
     excerpt:
-      "I recently undertook the development of a full-stack blog website using cutting-edge technologies including Next.js, TypeScript, and GraphQL.",
-    techStack: ["Next", "Node", "Tailwind", "SQL"],
+      "I recently undertook the development of a full-stack job board website using cutting-edge technologies including Next.js, TypeScript, and Firebase.",
+    techStack: ["Next JS", "Firebase", "Tailwind"],
   },
   {
     name: "Pokemon Battle Game",
